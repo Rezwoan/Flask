@@ -1,0 +1,60 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+</head>
+<body>
+<form class="box" method="POST">
+  <h1>Sign Up</h1>
+  <div class="form">
+    
+    <input 
+    type="text" 
+    class="log-form" 
+    id="email" 
+    name="email" 
+    placeholder="email">
+
+    <input 
+    type="text" 
+    class="log-form" 
+    id="fname" 
+    name="fname" 
+    placeholder="First Name">
+
+    <input 
+    type="text" 
+    class="log-form" 
+    id="lname" 
+    name="lname" 
+    placeholder="Last Name">
+
+    <input 
+    type="password" 
+    class="log-form" 
+    id="pass1" 
+    name="pass1" 
+    placeholder="password">
+
+    <input 
+    type="password" 
+    class="log-form" 
+    id="pass2" 
+    name="pass2" 
+    placeholder="Confirm Password">
+
+    <input type="submit" name="" id="" value="Login" />
+  </div>
+</form>
+</body>
+</html>
+
+{% endblock %}
